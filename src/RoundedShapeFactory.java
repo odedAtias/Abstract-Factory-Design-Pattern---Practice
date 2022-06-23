@@ -1,5 +1,4 @@
-public class RoundedShapeFactory {
-    public class ShapeFactory extends AbstractFactory{
+public class RoundedShapeFactory extends AbstractFactory {
         protected Shape getShape(String shape){
             if(shape.equalsIgnoreCase("RECTANGLE"))
                 return new RoundedRectangle();
@@ -8,4 +7,4 @@ public class RoundedShapeFactory {
             return null;
         }
     }
-}
+
